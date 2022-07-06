@@ -6343,6 +6343,7 @@ svg.has-white-color * {
 .project-cont {
   background: #e8f6f9;
   margin-bottom: 35px;
+  margin-top: -158px;
 }
 .project-company {
   font-family: "Roboto";
@@ -6379,6 +6380,67 @@ svg.has-white-color * {
   line-height: 30px;
   color: #333333;
 }
+@media (max-width: 768px) {
+  .project-cont {
+    margin-bottom: 0;
+    margin-top: -27px;
+  }
+  .project-company {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .project-name {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .project-kpi {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .kpi-desc {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
 /**Kpi Projects Styles */
+/* Taxonomy block */
+.services-cont {
+  position: -webkit-sticky;
+  position: fixed;
+  top: 20%;
+  padding: 50px;
+  width: 294px;
+  font-size: 20px;
+  background: #fff;
+  right: 0;
+  z-index: 1;
+  box-shadow: 6px 6px 12px rgb(0 0 0 / 15%);
+}
+.tax-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  color: #b4b4b4;
+  margin-bottom: 0;
+}
+.tax-content {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+@media (max-width: 768px) {
+  .services-cont {
+    position: static;
+    margin-top: 0 !important;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+/* Taxonomy block */
 
 /*# sourceMappingURL=front-css.min.css.map?ver=6317ce32*/

@@ -1,5 +1,5 @@
 <?php
-function _ws_block_project_tax($a) {
+function _ws_block_project_taxonomy($a) {
   $a['className'] = 'wp-block-ws-select-content ' . ($a['className'] ?? '');
   $horizontalScroll = isset($a['horizontalScroll']) && $a['horizontalScroll'] ? 'horizontal-scroll' : '';
   $ids = $a['ids'] ?? [];
