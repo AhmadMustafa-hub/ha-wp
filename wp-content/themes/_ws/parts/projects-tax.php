@@ -35,13 +35,14 @@
     }
     ?>
     </div>
-    <div class="">
-        <h4 class="tax-title">Recognition</h4>
-        <?php
-     foreach($reco as $term){
-   
+    <?php
+if($reco){
+
+    echo '<div class="">';
+    echo '<h4 class="tax-title">Recognition</h4>';
+    foreach($reco as $term){
         echo '<p class="tax-content">'.$term->name.'</p>';
     }
-    ?>
-    </div>
-</div>
+    echo '</div>';
+    echo '</div>';
+}

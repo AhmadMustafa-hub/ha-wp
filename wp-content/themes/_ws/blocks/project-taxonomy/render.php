@@ -4,15 +4,6 @@ function _ws_block_project_taxonomy($a) {
   $horizontalScroll = isset($a['horizontalScroll']) && $a['horizontalScroll'] ? 'horizontal-scroll' : '';
   $ids = $a['ids'] ?? [];
   $type = get_post_type($ids[0]);
-  if (strpos($a['className'], 'is-style-cards') !== false) {
-    $type = 'card';
-  }
-  if (strpos($a['className'], 'is-style-tiles') !== false) {
-    $type = 'tile';
-  }
-  if (strpos($a['className'], 'is-style-list') !== false) {
-    $type = 'list';
-  }
   ob_start(); ?>
 <div class="row <?= $type; ?>-row <?= $horizontalScroll; ?>">
     <?php
