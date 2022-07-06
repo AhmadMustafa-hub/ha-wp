@@ -1,0 +1,114 @@
+@import "../../src/css/front/modules/variables.css";
+
+.wp-block-ws-projects-kpi {
+  margin: 0;
+  + * {
+    margin-top: calc($grid-padding * 2 - $default-margin);
+  }
+  &.is-style-tiles {
+    .container {
+      padding: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .card-row {
+      margin: 0;
+      padding: 0.5px;
+    }
+    .card-container {
+      padding: 0.5px;
+      margin: 0;
+    }
+    .card {
+      box-shadow: none;
+    }
+  }
+  @media (--xs-down) {
+    .horizontal-scroll {
+      width: calc(100% + $container-padding * 2);
+      margin: 0 calc(-1 * $container-padding);
+      padding: 0 calc($container-padding * 0.75);
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      > * {
+        min-width: 100%;
+        padding: 0 calc($container-padding * 0.25);
+        &:last-child {
+          &::after {
+            content: "";
+            display: block;
+            position: relative;
+            height: 1px;
+            width: $container-padding;
+            margin-top: -1px;
+            left: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+/**Kpi Projects Styles */
+.project-cont {
+  background: #e8f6f9;
+  margin-bottom: 35px;
+  margin-top: -158px;
+}
+.project-company {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #333333;
+}
+.project-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+  color: #333333;
+}
+.project-kpi {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+.kpi-desc {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #333333;
+}
+@media (max-width: 768px) {
+  .project-cont {
+    margin-bottom: 0;
+    margin-top: -27px;
+  }
+  .project-company {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .project-name {
+    font-size: 30px;
+    line-height: 32px;
+  }
+  .project-kpi {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .kpi-desc {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+/**Kpi Projects Styles */
